@@ -12,6 +12,6 @@ public interface IproductoService {
 
     public List<Producto> findall();
     public Producto save(Producto productos);
-    public Optional<Producto> findById(Integer  id_producto);
+    public Optional<Producto> findById(Integer  idproducto);
     public void delete(Producto producto);
 }

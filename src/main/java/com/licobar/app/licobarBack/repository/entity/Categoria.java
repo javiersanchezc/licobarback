@@ -1,13 +1,17 @@
 package com.licobar.app.licobarBack.repository.entity;
 
-import javax.persistence.*;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+import javax.persistence.*;
+@ApiModel("Model User")
 @Entity(name = "categorias")
 public class Categoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idCategory")
+    @ApiModelProperty(value = "the category's id", required = true)
     private int idCategory;
 
     @Column
